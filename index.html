@@ -1,195 +1,465 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preesha Vashisth | Portfolio</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Preesha Vashisth — Portfolio</title>
+    <!-- Inter font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">Preesha Vashisth</div>
-        <ul id="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    </head>
+    <body class="bg-[#0b1020] text-gray-100 font-inter leading-relaxed">
 
-        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    </nav>
-
-    <section id="home" class="section home-section">
-        <div class="home-content">
-            <h1>Hello, I'm <span>Preesha Vashisth</span></h1>
-            <p>4th Year Student at VIT Bhopal University</p>
-            <p>Web Developer | Designer | Problem Solver</p>
-            <a href="#contact" class="btn">Contact Me</a>
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            Hello, I'm Preesha Vashisth, a coding enthusiast with strong communication skills and a passion for the IT sector. Currently pursuing my studies at VIT 
-            Bhopal, I am eager to collaborate on projects and continually expand my knowledge. I invite you to explore my profile to learn more about my experience and 
-            interests. Please feel free to reach out!
-        </p>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <div class="skill">
-                <h3>HTML</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
-            </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
-            </div>
-            <div class="skill">
-                <h3>Java</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
-            </div>
-            <div class="skill">
-                <h3>SQL</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
-            </div>
-            <div class="skill">
-                <h3>Excel</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
-            </div>
-            <div class="skill">
-                <h3>Google Sheets</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
-            </div>
-            <!-- <div class="skill">
-                <h3>Power BI</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
-            </div> -->
-            <div class="skill">
-                <h3>Web Fundamentals</h3>
-                <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects-list">
-            <div class="project-card">
-                <p>Project 1</p>
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio website to showcase my skills and projects.</p>
-                <a href="https://preeshavashisth.webxworld.com/#" target="_blank">View Project</a>
-            </div>
-            <div class="project-card">
-                <p>Project 2</p>
-                <h3>Website using webflow</h3>
-                <p>Developed a visually engaging and fully responsive website using Webflow's no-code platform.</p>
-                <a href="https://preview.webflow.com/preview/preeshas-fresh-site?utm_medium=preview_link&utm_source=designer&utm_content=preeshas-fresh-site&preview=d9eff90e94acde40f7e41ea746f636b4&workflow=preview" target="_blank">View Project</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <h2>Experience</h2>
-        <div class="experience-list">
-            <div class="experience-item">
-                <h3>Business and Operations Intern <span>@ Axxentraa NextGen Pvt Ltd </span></h3>
-                <p class="exp-duration">June 2025 - September 2025</p>
-                <ul>
-                    <li>Assist in gathering, analyzing, and presenting business performance data to support strategic decision-making.</li>
-                    <li> Help with social media management and content creation to boost the company's online presence.</li>
-                    <li>Draft internal communications, policy documents, and presentations that align with company strategies.</li>
+        <!-- Navbar -->
+        <header class="fixed w-full z-40 top-0 left-0 transition-colors duration-300" id="site-header">
+            <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+                <a href="#home" class="text-xl font-semibold tracking-wider text-white">Preesha Vashisth</a>
+                <ul class="hidden md:flex items-center gap-6" id="nav-links">
+                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#home">Home</a></li>
+                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#about">About</a></li>
+                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#projects">Projects</a></li>
+                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#skills">Skills</a></li>
+                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#experience">Experience</a></li>
+                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#contact">Contact</a></li>
                 </ul>
+                                <div class="flex items-center gap-3">
+                                        <!-- Download link points to local PDF in assets and uses the download attribute -->
+                                        <a id="download-resume" href="assets/Preesha_Resume.pdf" download class="download-btn inline-flex items-center gap-2 bg-gradient-to-r from-[#2563eb] to-[#60a5fa] hover:from-[#1e40af] hover:to-[#3b82f6] text-white px-4 py-2 rounded-md text-sm transition-transform transform-gpu">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5"/></svg>
+                                            <span>Download Resume</span>
+                                        </a>
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-200 hover:bg-white/5"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-[#071027aa] backdrop-blur-sm">
+                <div class="flex flex-col gap-2 px-6 py-4">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
             </div>
-            <div class="experience-item">
-                <h3>Intern <span>@ India Space Lab </span></h3>
-                <p class="exp-duration">December 2025 - January 2025</p>
-                <ul>
-                    <li>Contributed to the design and development of CanSat and CubeSat prototypes by researching related topics.</li>
-                    <li>Assisted in data collection for drone platforms.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Core Member <span>@ Cyber Warriors Club, VITB  </span></h3>
-                <p class="exp-duration">December 2023 - Present</p>
-                <ul>
-                    <li>Assisted in organizing and managing events.</li>
-                    <li>Collaborated with team members to drive initiatives, and contributed to the overall growth and success of the club.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="certifications" class="section">
-        <h2>Certifications</h2>
-        <ul class="certifications-list">
-            <li>
-                <strong>Java Foundations Associate </strong> - Oracle, April 2025
-            </li>
-            <li>
-                <strong>The Bits and Bytes of Computer Networking </strong> - Coursera, December 2023
-            </li>
-            <li>
-                <strong>HTML, CSS, and JavaScript for Web Developers by Johns Hopkins University </strong> - Coursera, January 2025
-            </li>
-            <li>
-                <strong>Create a no-code responsive website with Webflow </strong> - Coursera, December 2023
-            </li>
-            <li>
-                <strong>AWS Academy Graduate - AWS Academy Cloud Architecting </strong> - ETHNUS, April 2025
-            </li>
-            <li>
-                <strong>Cloud Computing  </strong> - NPTEL, May 2024
-            </li>
-            <li>
-                <strong>Introduction to Cloud Computing on AWS for Beginners   </strong> - Udemy, June 2024
-            </li>
-            <li>
-                <strong>Business Analyst Experience Certification  </strong> - Finlatics, February 2025
-            </li>
-            <li>
-                <strong>Intro to Cybersecurity </strong> - TryHackMe, July 2023
-            </li>
-            <li>
-                <strong>Pre-Security </strong> - TryHackMe, July 2023
-            </li>
-            <li>
-                <strong>Cybersecurity Fundamentals   </strong> - LinkedIn Learning, March 2023
-            </li>
-        </ul>
-    </section>
+        <main class="pt-24">
+            <!-- Hero -->
+            <section id="home" class="min-h-[78vh] flex items-center">
+                <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <p class="text-teal-300 font-medium">Hi, I'm</p>
+                        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                            <span class="text-white">Preesha Vashisth</span>
+                        </h1>
+                        <div class="text-2xl md:text-3xl font-semibold text-gray-200">
+                            <span id="type-text" class="text-[#93c5fd]"></span>
+                            <span class="blinking-cursor">|</span>
+                        </div>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-            <p id="form-message"></p>
-        </form>
-    </section>
+                        <p class="text-gray-300 max-w-xl">I build modern, responsive web applications and UX-driven interfaces. Currently a B.Tech CSE student at VIT Bhopal (Class of 2026), seeking entry-level software developer roles.</p>
 
-    <footer>
-        <p>&copy; 2025 Preesha Vashisth. All rights reserved.</p>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank">LinkedIn</a> |
-            <a href="https://github.com/Mysterious135" target="_blank">GitHub</a> |
-            <a href="ptpk2810@gmail.com" target="_blank">Gmail</a>
-        </div>
-    </footer>
+                        <div class="flex items-center gap-4">
+                            <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">LinkedIn</a>
+                            <a href="https://github.com/preesha73" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">GitHub</a>
+                            <a href="mailto:preeshavashisth@gmail.com" class="text-gray-200 hover:text-[#60a5fa]">Email</a>
+                        </div>
+                    </div>
 
-    <script src="script.js"></script>
-</body>
+                    <div class="flex justify-center">
+                        <!-- Profile photo (place your image at assets/profile.jpg) -->
+                        <div class="w-48 md:w-72 h-48 md:h-72 rounded-2xl overflow-hidden border border-white/5 bg-gradient-to-br from-[#07112b] to-[#0b1630] flex items-center justify-center">
+                            <img src="assets/profile.png" alt="Preesha Vashisth" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="max-w-6xl mx-auto px-6 py-16 fade-section">
+                <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                <p class="text-gray-300 max-w-3xl">I am a final-year Computer Science student at VIT Bhopal University with a strong foundation in full-stack development. I enjoy building robust and scalable web applications, automating CI/CD pipelines, and crafting delightful user experiences. I have hands-on experience with React, Node.js, TypeScript, and cloud tools like AWS — and I love solving problems and learning new technologies.</p>
+
+                <div class="mt-6 flex items-center gap-4">
+                    <a href="mailto:preeshavashisth@gmail.com" class="hire-btn inline-flex items-center gap-2 bg-gradient-to-r from-[#fb7185] to-[#fca5a5] hover:from-[#f97372] hover:to-[#fb7185] text-white px-4 py-2 rounded-md text-sm">Hire Me</a>
+                    <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">LinkedIn</a>
+                    <a href="https://github.com/preesha73" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">GitHub</a>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="max-w-6xl mx-auto px-6 py-16 fade-section">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-3xl font-bold">Projects</h2>
+                    <div class="flex gap-2" id="project-filters">
+                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="all">All</button>
+                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="web">Web</button>
+                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="devops">DevOps</button>
+                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="typescript">TypeScript</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
+                    <!-- Project cards: populated statically from resume + GitHub selection -->
+                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,typescript,design">
+                        <h3 class="text-xl font-semibold text-white mb-2">My Design System</h3>
+                        <p class="text-gray-300 text-sm mb-3">Enterprise-grade design system built with React, TypeScript and Storybook. Includes accessible components and CI automation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Storybook</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/preesha73/MyDesignSystem" target="_blank" class="btn-secondary">View Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,fullstack,docker,devops">
+                        <h3 class="text-xl font-semibold text-white mb-2">Food Delivery Platform</h3>
+                        <p class="text-gray-300 text-sm mb-3">Full-stack delivery app with Node.js, PostgreSQL backend, containerized with Docker and CI/CD pipelines for deployment.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Docker</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/preesha73/DeliveryApp" target="_blank" class="btn-secondary">View Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,real-time,messaging,mongodb">
+                        <h3 class="text-xl font-semibold text-white mb-2">Real-Time Chat App</h3>
+                        <p class="text-gray-300 text-sm mb-3">MERN chat application with Socket.IO, JWT authentication and a scalable messaging API.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Socket.IO</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/preesha73/Real-Time-ChatApp" target="_blank" class="btn-secondary">View Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,portfolio,html">
+                        <h3 class="text-xl font-semibold text-white mb-2">Portfolio</h3>
+                        <p class="text-gray-300 text-sm mb-3">Responsive personal portfolio showcasing projects, skills and experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/preesha73/Portfolio" target="_blank" class="btn-secondary">View Code</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,js,amdox">
+                        <h3 class="text-xl font-semibold text-white mb-2">Amdox Website</h3>
+                        <p class="text-gray-300 text-sm mb-3">Company website developed during my Web Developer internship at Amdox Technologies — responsive layout and interactive sections.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/preesha73/Amdox-Website" target="_blank" class="btn-secondary">View Code</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Skills (three-card layout) -->
+            <section id="skills" class="max-w-6xl mx-auto px-6 py-16 fade-section">
+                <h2 class="text-3xl font-bold mb-8 text-center">Let's have a look at my <span class="text-[#fca5a5]">Skills</span></h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 skill-grid">
+                    <!-- Frontend card -->
+                    <div class="skill-card bg-[#071026] rounded-2xl p-6 shadow-md">
+                        <h3 class="text-lg font-semibold text-white mb-3">Frontend Development</h3>
+                        <div class="skill-underline mb-4"></div>
+                        <div class="grid grid-cols-2 gap-y-4 gap-x-6">
+                            <div class="skill-row">
+                                <div class="skill-icon">HTML</div>
+                                <div>
+                                    <div class="skill-name">HTML5</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">⚛️</div>
+                                <div>
+                                    <div class="skill-name">React</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">CSS</div>
+                                <div>
+                                    <div class="skill-name">CSS3</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">B</div>
+                                <div>
+                                    <div class="skill-name">Bootstrap</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">JS</div>
+                                <div>
+                                    <div class="skill-name">JavaScript</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">TW</div>
+                                <div>
+                                    <div class="skill-name">Tailwind</div>
+                                    <div class="skill-level">Intermediate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend card -->
+                    <div class="skill-card bg-[#071026] rounded-2xl p-6 shadow-md">
+                        <h3 class="text-lg font-semibold text-white mb-3">Backend Development</h3>
+                        <div class="skill-underline mb-4"></div>
+                        <div class="grid grid-cols-2 gap-y-4 gap-x-6">
+                            <div class="skill-row">
+                                <div class="skill-icon">Node</div>
+                                <div>
+                                    <div class="skill-name">Node.js</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">DB</div>
+                                <div>
+                                    <div class="skill-name">SQL</div>
+                                    <div class="skill-level">Intermediate</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">🍃</div>
+                                <div>
+                                    <div class="skill-name">MongoDB</div>
+                                    <div class="skill-level">Intermediate</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">Ex</div>
+                                <div>
+                                    <div class="skill-name">Express.js</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">API</div>
+                                <div>
+                                    <div class="skill-name">REST APIs</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">☕</div>
+                                <div>
+                                    <div class="skill-name">Java</div>
+                                    <div class="skill-level">Intermediate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools card -->
+                    <div class="skill-card bg-[#071026] rounded-2xl p-6 shadow-md">
+                        <h3 class="text-lg font-semibold text-white mb-3">Tools and Technology</h3>
+                        <div class="skill-underline mb-4"></div>
+                        <div class="grid grid-cols-2 gap-y-4 gap-x-6">
+                            <div class="skill-row">
+                                <div class="skill-icon">git</div>
+                                <div>
+                                    <div class="skill-name">Git</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">✉️</div>
+                                <div>
+                                    <div class="skill-name">Postman</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">GH</div>
+                                <div>
+                                    <div class="skill-name">Github</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">aws</div>
+                                <div>
+                                    <div class="skill-name">AWS</div>
+                                    <div class="skill-level">Intermediate</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">Fg</div>
+                                <div>
+                                    <div class="skill-name">Figma</div>
+                                    <div class="skill-level">Advanced</div>
+                                </div>
+                            </div>
+
+                            <div class="skill-row">
+                                <div class="skill-icon">🐳</div>
+                                <div>
+                                    <div class="skill-name">Docker</div>
+                                    <div class="skill-level">Intermediate</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience & Education -->
+            <section id="experience" class="max-w-6xl mx-auto px-6 py-16 fade-section">
+                <h2 class="text-3xl font-bold mb-4">Education & Experience</h2>
+                <h4 class="text-gray-300 mb-2">My professional Journey</h4><br>
+
+                <div class="grid grid-cols-1 gap-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Education</h3>
+                        <p class="text-gray-300 mt-2">Bachelor of Technology in Computer Science and Engineering — VIT Bhopal University (Aug 2022 – Oct 2026)</p>
+                        <p class="text-gray-400 text-sm mt-1">Cumulative GPA: 8.64</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white">Work Experience</h3>
+                        <div class="mt-3 space-y-4">
+                            <div>
+                                <p class="font-semibold text-white">Web Developer Intern — Amdox Technologies (Sept 2025 - Oct 2025)</p>
+                                <ul class="list-disc list-inside text-gray-300 mt-2">
+                                    <li>Developed responsive web applications using React and modern JS to improve user experience.</li>
+                                    <li>Integrated REST APIs and collaborated with designers to optimize front-end functionality.</li>
+                                    <li>Assisted with debugging, code reviews and delivering maintainable software.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p class="font-semibold text-white">Business & Operations Intern — Axxentraa NextGen (June 2025 - Sept 2025)</p>
+                                <ul class="list-disc list-inside text-gray-300 mt-2">
+                                    <li>Supported process optimization and analytics to improve operational efficiency.</li>
+                                    <li>Assisted in strategic planning by analyzing data and identifying improvement opportunities.</li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p class="font-semibold text-white">Business Analyst Intern — Finlatics (Dec 2024 - Feb 2025)</p>
+                                <ul class="list-disc list-inside text-gray-300 mt-2">
+                                    <li>Completed a Business Analyst certification focused on data-driven decision-making.</li>
+                                    <li>Gained experience in market research, competitive analysis, and strategic planning.</li>
+                                    <li>Applied data analysis and visualization skills using tools like Excel and Power BI.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="max-w-6xl mx-auto px-6 py-16 fade-section">
+                <h2 class="text-3xl font-bold mb-4">Get in touch</h2>
+                <p class="text-gray-300 mb-6">I'm open to entry-level software developer roles and internships. Reach out and let's talk.</p>
+
+                <!-- Optional image: put your screenshot at assets/contact-form.png. If not present, onerror will hide the img element. -->
+                <img src="assets/contact-form.png" alt="Contact form preview" class="w-full rounded-lg shadow-md mb-8" onerror="this.style.display='none'">
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 contact-grid">
+                    <a href="mailto:preeshavashisth@gmail.com" class="contact-card group" aria-label="Email Preesha">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- Envelope SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" fill="#0b1020"/>
+                                <path d="M20 6l-8 5-8-5" fill="#0b1020"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-title">Email</h4>
+                        <p class="contact-detail">preeshavashisth@gmail.com</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="contact-card group" aria-label="Preesha on LinkedIn">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- LinkedIn SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                <rect x="0" y="0" width="24" height="24" rx="4" fill="#0b1020" />
+                                <path d="M6.94 9.5H4.67V19h2.27V9.5zM5.8 7.97c-.73 0-1.18-.5-1.18-1.12 0-.63.47-1.12 1.21-1.12.74 0 1.18.49 1.19 1.12 0 .62-.45 1.12-1.22 1.12zM20 19h-2.2v-4.9c0-1.17-.42-1.97-1.48-1.97-.81 0-1.29.55-1.5 1.08-.08.2-.1.48-.1.76V19H11.5s.03-8.3 0-9.17h2.26v1.3c.3-.47.84-1.14 2.04-1.14 1.49 0 2.6.98 2.6 3.09V19z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-title">LinkedIn</h4>
+                        <p class="contact-detail">linkedin.com/in/preesha-vashisth-493008248</p>
+                    </a>
+
+                    <a href="https://github.com/preesha73" target="_blank" class="contact-card group" aria-label="Preesha on GitHub">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- GitHub SVG (simplified octocat) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.75-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.46-2.29 1.2-3.1-.12-.3-.52-1.52.11-3.17 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.65.23 2.87.11 3.17.75.81 1.2 1.84 1.2 3.1 0 4.43-2.7 5.4-5.28 5.69.42.36.8 1.08.8 2.18 0 1.57-.01 2.83-.01 3.22 0 .31.21.67.78.56C20.71 21.38 24 17.08 24 12 24 5.73 18.27.5 12 .5z" fill="#0b1020"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-title">GitHub</h4>
+                        <p class="contact-detail">github.com/preesha73</p>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="contact-card group" aria-label="Preesha on Instagram">
+                        <div class="contact-icon" aria-hidden="true">
+                            <!-- Instagram SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="5" fill="#0b1020" />
+                                <path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 1 0 12 7.2zM17.6 6.2a1.06 1.06 0 1 0 0 2.12 1.06 1.06 0 0 0 0-2.12z" fill="#fff"/>
+                            </svg>
+                        </div>
+                        <h4 class="contact-title">Instagram</h4>
+                        <p class="contact-detail">@preesha_vashisth</p>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="mt-12 py-8 bg-[#061025] text-center text-gray-400">
+            <div class="max-w-6xl mx-auto px-6">&copy; 2025 Preesha Vashisth. All rights reserved.</div>
+        </footer>
+
+        <!-- Scroll to top -->
+        <button id="scroll-top" title="Back to top" class="hidden fixed right-6 bottom-6 bg-[#2563eb] hover:bg-[#1e40af] text-white p-3 rounded-full shadow-lg">
+            ↑
+        </button>
+
+        <script src="script.js"></script>
+    </body>
 </html>
