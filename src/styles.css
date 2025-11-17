@@ -1,0 +1,143 @@
+/* Custom CSS used alongside Tailwind */
+
+/* Use Inter loaded from Google Fonts (imported in HTML) */
+:root { --accent: #60a5fa; --muted: #94a3b8 }
+
+.font-inter { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+
+/* Typing cursor and animation */
+.blinking-cursor { color: var(--accent); margin-left: 6px; opacity: 1; animation: blink 1s steps(2,start) infinite; }
+@keyframes blink { to { opacity: 0 } }
+
+/* Project card overlay that appears on hover */
+.project-card { position: relative; transition: transform .25s ease, box-shadow .25s ease; }
+.project-card { cursor: pointer; }
+.project-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 40px rgba(2,6,23,0.6); }
+.project-card .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2,6,23,0.25), rgba(2,6,23,0.6)); opacity: 0; display:flex; align-items:center; justify-content:center; gap:0.5rem; transition: opacity .18s ease; }
+.project-card:hover .overlay { opacity: 1 }
+
+.btn { background: var(--accent); color: white; padding: .5rem 1rem; border-radius: .5rem; font-weight:600; }
+.btn-secondary { background: transparent; border:1px solid rgba(255,255,255,0.06); color:#cbd5e1; padding:.45rem .9rem; border-radius:.5rem }
+.btn-ghost { background: transparent; color:#94a3b8; border: 1px dashed rgba(255,255,255,0.03); padding:.45rem .9rem; border-radius:.5rem }
+.btn.outline { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.06) }
+.btn.disabled { opacity: .6; pointer-events: none }
+
+.tag, .skill-pill { background: rgba(255,255,255,0.04); color: #dbeafe; padding: .25rem .5rem; border-radius: .375rem; font-size:.8rem }
+
+/* Fade-in on scroll helpers: visible by default so content is accessible even if JS doesn't run yet */
+.fade-section { opacity: 0; transform: translateY(24px); }
+.in-view { opacity: 1 !important; transform: translateY(0) !important; transition: opacity .7s cubic-bezier(.16,.84,.3,1), transform .7s cubic-bezier(.16,.84,.3,1); }
+
+/* Modal styles */
+.modal-overlay { position: fixed; inset: 0; background: rgba(2,6,23,0.7); display:flex; align-items:center; justify-content:center; z-index:60; }
+.modal { width: 92%; max-width: 760px; background: #061026; border-radius: 12px; padding: 1.25rem; box-shadow: 0 10px 40px rgba(2,6,23,0.6); border: 1px solid rgba(255,255,255,0.03); color: #e6eefc; }
+.modal-header { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.modal-title { font-size:1.25rem; font-weight:700; }
+.modal-body { margin-top: .75rem; color: #cbd5e1; }
+.modal-tags { margin-top: .75rem; display:flex; gap:.5rem; flex-wrap:wrap; }
+.modal-footer { margin-top: .85rem; display:flex; gap:.5rem; justify-content:flex-end; }
+.modal-close { background: transparent; border: none; color: #cbd5e1; padding:.35rem; border-radius:.375rem; cursor:pointer }
+.modal a.btn { text-decoration:none }
+
+
+/* Scroll to top */
+#scroll-top { width:44px; height:44px; display:flex; align-items:center; justify-content:center }
+
+/* Utility small tweaks */
+.nav-link { color: #d1d5db; padding: .25rem .5rem }
+.nav-link:hover { color: var(--accent) }
+
+/* Mobile menu appearance */
+#mobile-menu a { color: #e6eefc; padding: .5rem 0 }
+
+/* Make sure body scroll-behavior is smooth */
+html { scroll-behavior: smooth }
+
+/* Download button styles */
+.download-btn { box-shadow: 0 6px 18px rgba(37,99,235,0.12); }
+.download-animate { animation: pop .45s cubic-bezier(.2,.8,.25,1); }
+@keyframes pop { 0% { transform: scale(1) } 50% { transform: scale(1.05) } 100% { transform: scale(1) } }
+
+/* shake animation for error feedback */
+.shake { animation: shake .45s cubic-bezier(.36,.07,.19,.97); }
+@keyframes shake { 10%, 90% { transform: translateX(-1px); } 20%, 80% { transform: translateX(2px); } 30%, 50%, 70% { transform: translateX(-4px); } 40%, 60% { transform: translateX(4px); } }
+
+/* Typography & layout refinements */
+body { font-size: 16px; line-height: 1.6; }
+h1, .modal-title { letter-spacing: -0.02em; }
+h2 { letter-spacing: -0.01em; }
+
+/* Skill pill interactive styles */
+.skill-pill {
+	background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03));
+	color: #e6f0ff;
+	padding: .5rem .65rem;
+	border-radius: 999px;
+	font-size: .9rem;
+	cursor: pointer;
+	transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+	display: inline-flex; align-items: center; gap: .4rem;
+	border: 1px solid rgba(255,255,255,0.03);
+}
+.skill-pill:hover,
+.skill-pill:focus {
+	transform: translateY(-4px) scale(1.03);
+	box-shadow: 0 10px 30px rgba(2,6,23,0.6), 0 2px 8px rgba(96,165,250,0.08);
+	background: linear-gradient(90deg, rgba(96,165,250,0.12), rgba(99,102,241,0.06));
+	color: #ffffff;
+	outline: none;
+}
+.skill-pill:active { transform: translateY(-2px) scale(0.99); }
+.skill-pill[aria-pressed="true"] { box-shadow: 0 12px 40px rgba(37,99,235,0.12); background: linear-gradient(90deg,#2563eb,#60a5fa); color: white }
+
+/* Focus visible for accessibility */
+.skill-pill:focus-visible { box-shadow: 0 0 0 4px rgba(96,165,250,0.12); }
+
+/* subtle text shadow for headings to improve contrast */
+.text-shadow { text-shadow: 0 1px 0 rgba(2,6,23,0.6); }
+
+/* add slight depth to sections */
+section { will-change: transform, opacity; }
+
+/* Project-specific hover styles as requested */
+#projects a:hover {
+	color: #ff6347; /* Tomato */
+}
+
+#projects button:hover,
+#projects .btn:hover,
+#projects .btn-secondary:hover,
+#projects .btn-ghost:hover {
+	background-color: #4CAF50; /* Green */
+	color: #ffffff;
+	transition: background-color .18s ease, color .18s ease, transform .12s ease;
+}
+
+/* Skills three-card layout styles */
+.skill-grid { }
+.skill-card { border: 1px solid rgba(255,255,255,0.03); }
+.skill-card .skill-underline { height: 4px; width: 56px; border-radius: 4px; background: linear-gradient(90deg, rgba(252,165,165,0.12), rgba(96,165,250,0.12)); }
+.skill-row { display:flex; align-items:center; gap:0.75rem }
+.skill-icon { width:44px; height:44px; border-radius:10px; display:flex; align-items:center; justify-content:center; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03)); color:#e6eefc; font-weight:700; border:1px solid rgba(255,255,255,0.03) }
+.skill-name { font-weight:600; color: #eef2ff }
+.skill-level { font-size: .85rem; color: #94a3b8 }
+
+@media (min-width: 768px) {
+	.skill-card { padding: 1.25rem }
+}
+
+/* Contact cards */
+.contact-grid { margin-top: 6px }
+.contact-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03)); border-radius: 12px; padding: 1.25rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; text-align:center; border:1px solid rgba(255,255,255,0.03); transition: transform .18s ease, box-shadow .18s ease; color: #e6eefc; text-decoration:none }
+.contact-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(2,6,23,0.6), 0 6px 18px rgba(99,102,241,0.04) }
+.contact-icon { width:64px; height:64px; border-radius:999px; display:flex; align-items:center; justify-content:center; background:#fff; color:#0b1020; font-weight:700; font-size:1.25rem; box-shadow: 0 6px 18px rgba(37,99,235,0.06) }
+.contact-title { font-weight:700; color: #eef2ff }
+.contact-detail { color: #cbd5e1; font-size:.95rem }
+
+.hire-btn { box-shadow: 0 8px 30px rgba(252,165,165,0.08) }
+
+/* remove empty rule to satisfy linter */
+.skill-grid { display: block }
+
+
+

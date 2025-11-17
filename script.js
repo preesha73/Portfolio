@@ -63,7 +63,8 @@ document.addEventListener('DOMContentLoaded', () => {
             i++;
         }
     }
-    typeLoop(typeEl, phrases);
+    // Start typing animation
+    typeLoop(typeEl, phrases).catch(err => console.error('[portfolio] typeLoop error:', err));
 
     // ---------- Project filtering ----------
     if (filterButtons && projectCards.length) {

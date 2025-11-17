@@ -1,0 +1,23 @@
+{
+  "name": "resume-portfolio-website",
+  "version": "1.0.0",
+  "description": "**Project Overview**",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/preesha73/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/preesha73/portfolio/issues"
+  },
+  "homepage": "https://github.com/preesha73/portfolio#readme",
+  "devDependencies": {
+    "vite": "^7.2.2"
+  }
+}

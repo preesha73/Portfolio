@@ -10,10 +10,10 @@
 @keyframes blink { to { opacity: 0 } }
 
 /* Project card overlay that appears on hover */
-.project-card { position: relative; transition: transform .25s ease, box-shadow .25s ease; }
+.project-card { position: relative; transition: transform .25s ease, box-shadow .25s ease; border-radius: 12px; overflow: hidden; }
 .project-card { cursor: pointer; }
 .project-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 40px rgba(2,6,23,0.6); }
-.project-card .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(2,6,23,0.25), rgba(2,6,23,0.6)); opacity: 0; display:flex; align-items:center; justify-content:center; gap:0.5rem; transition: opacity .18s ease; }
+.project-card .overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(96,165,250,0.15), rgba(96,165,250,0.25)); opacity: 0; display:flex; align-items:center; justify-content:center; gap:0.5rem; transition: opacity .25s ease; backdrop-filter: blur(2px); }
 .project-card:hover .overlay { opacity: 1 }
 
 .btn { background: var(--accent); color: white; padding: .5rem 1rem; border-radius: .5rem; font-weight:600; }
@@ -130,7 +130,7 @@ section { will-change: transform, opacity; }
 .contact-grid { margin-top: 6px }
 .contact-card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03)); border-radius: 12px; padding: 1.25rem; display:flex; flex-direction:column; align-items:center; gap:0.5rem; text-align:center; border:1px solid rgba(255,255,255,0.03); transition: transform .18s ease, box-shadow .18s ease; color: #e6eefc; text-decoration:none }
 .contact-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(2,6,23,0.6), 0 6px 18px rgba(99,102,241,0.04) }
-.contact-icon { width:64px; height:64px; border-radius:999px; display:flex; align-items:center; justify-content:center; background:#fff; color:#0b1020; font-weight:700; font-size:1.25rem; box-shadow: 0 6px 18px rgba(37,99,235,0.06) }
+.contact-icon { width:64px; height:64px; border-radius:999px; display:flex; align-items:center; justify-content:center; background:#ffffff; color:#0b1020; font-weight:700; font-size:1.25rem; box-shadow: 0 6px 18px rgba(37,99,235,0.06); padding: 12px }
 .contact-title { font-weight:700; color: #eef2ff }
 .contact-detail { color: #cbd5e1; font-size:.95rem }
 
