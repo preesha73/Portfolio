@@ -1,26 +1,8 @@
-**Project Overview**
-
-- **Repo**: `c:\Users\ptpk2\Resume Portfolio Website`
-- **Purpose**: A responsive personal portfolio website (three main files: `index.html`, `styles.css`, `script.js`) built with Tailwind (CDN) and the Inter font.
-
-**What I changed (high level)**
-
-- Rewrote and organized the site structure in `index.html`.
-- Repaired stylesheet link (now `styles.css`) and added custom CSS rules in `styles.css`.
-- Implemented interactive behaviors in `script.js` (typing animation, sticky header, project filters, project modals, fade-in on scroll, scroll-to-top button, resume download handling, debug logs).
-- Replaced the Skills section with a three-card layout (Frontend, Backend, Tools) and added styles for the new layout.
-- Added a `Hire Me` mailto button in the About section.
-- Reworked the Contact section: added an optional contact-form image (`assets/contact-form.png`), and four contact cards (Email, LinkedIn, GitHub, Instagram) using inline SVG icons and accessible labels.
-- Fixed layout/spacing in the Education & Experience area and restored the two-column layout on wider viewports.
-- Added `assets/profile.png` and a placeholder `assets/Preesha_Resume.pdf` (if present).
-
-**Files changed/added**
-
 # My Portfolio Website — What I Built and How I Built It
 
 This is my personal portfolio website. I created the layout, styling, and all interactivity using plain HTML, Tailwind (CDN), custom CSS, and vanilla JavaScript.
 
-## What I built (in my own words)
+## What I built
 - A responsive, dark-themed portfolio with sections for Hero, About, Projects, Skills, Experience, and Contact.
 - A typing animation in the hero that cycles short phrases describing my role and skills.
 - Interactive project cards with client-side filtering (using `data-tags`) and modals for details.
@@ -28,7 +10,7 @@ This is my personal portfolio website. I created the layout, styling, and all in
 - Contact cards with icons and a `mailto:` Hire Me button.
 - Fade-in-on-scroll animations (IntersectionObserver), sticky header behavior, and a scroll-to-top button.
 
-## Files I changed or added
+## Files
 - `index.html` — main site structure and content.
 - `styles.css` — custom CSS for animations, cards, modals and small design tweaks.
 - `script.js` — client-side interactivity: typing, filtering, modals, fade-in, header behavior.
@@ -53,18 +35,33 @@ npx http-server -p 8888
 # open http://127.0.0.1:8888
 ```
 
-## Deploying (quick)
-- Vercel: connect your GitHub, import this repo, choose `Other` (static) and deploy.
+## Deploying 
 - GitHub Pages: enable Pages on the `main` branch and serve from the root.
 
-## Notes & small maintenance items
-- I updated the public email in the site to `ptpk2810@gmail.com`.
-- If something doesn't work, open DevTools → Console and look for `[portfolio]` debug logs.
-- To change content (projects, skills, contact) edit `index.html`. For style changes edit `styles.css`. For behavior edit `script.js`.
+## Live demo
 
-## Next steps I can take for you
-- Add screenshots and a live URL to the README.
-- Add a simple deployment config (Vercel or GitHub Actions).
-- Improve accessibility (modal focus trap, ARIA attributes).
+The site can be deployed to Vercel, GitHub Pages, or any static host. Example (update with your real URL after deploying):
 
-If you want me to commit the README changes and push them, I can run the git commands for you.
+- Example (GitHub Pages): https://preesha73.github.io/portfolio
+
+Replace the URL above with the actual live URL once you deploy (Vercel or Pages). I can update this README with the real URL if you share it.
+
+## Screenshots
+
+Below are a few example screenshot placeholders.
+
+Hero / Landing
+
+![Hero screenshot](assets/screenshots/hero.png)
+
+Projects grid
+
+![Projects screenshot](assets/screenshots/projects.png)
+
+Skills grid
+
+![Skills screenshot](assets/screenshots/skills.png)
+
+Contact section
+
+![Contact screenshot](assets/screenshots/contact.png)
