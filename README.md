@@ -52,16 +52,16 @@ Below are a few example screenshot placeholders.
 
 Hero / Landing
 
-![Hero screenshot](assets/screenshots/hero.png)
+![Hero screenshot](public/assets/screenshots/hero.png)
 
 Projects grid
 
-![Projects screenshot](assets/screenshots/projects.png)
+![Projects screenshot](public/assets/screenshots/projects.png)
 
 Skills grid
 
-![Skills screenshot](assets/screenshots/skills.png)
+![Skills screenshot](public/assets/screenshots/skills.png)
 
 Contact section
 
-![Contact screenshot](assets/screenshots/contact.png)
+![Contact screenshot](public/assets/screenshots/contact.png)
