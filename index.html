@@ -14,24 +14,42 @@
     <body class="bg-[#0b1020] text-gray-100 font-inter leading-relaxed">
 
         <!-- Navbar -->
-        <header class="fixed w-full z-40 top-0 left-0 transition-colors duration-300" id="site-header">
-            <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-                <a href="#home" class="text-xl font-semibold tracking-wider text-white">Preesha Vashisth</a>
-                <ul class="hidden md:flex items-center gap-6" id="nav-links">
-                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#home">Home</a></li>
-                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#about">About</a></li>
-                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#projects">Projects</a></li>
-                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#skills">Skills</a></li>
-                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#experience">Experience</a></li>
-                    <li><a class="nav-link text-gray-200 hover:text-[#60a5fa]" href="#contact">Contact</a></li>
+        <header class="fixed w-full z-40 top-0 left-0 backdrop-blur-md bg-[#0b1020]/80 border-b border-cyan-500/10 shadow-xl shadow-cyan-500/5 transition-all duration-300" id="site-header">
+            <!-- Animated gradient background -->
+            <div class="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-transparent to-blue-500/5 pointer-events-none"></div>
+            
+            <nav class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4 relative z-10">
+                <a href="#home" class="text-xl font-bold tracking-wider bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent hover:from-cyan-300 hover:to-blue-300 transition-all duration-300">Preesha Vashisth</a>
+                
+                <ul class="hidden md:flex items-center gap-8" id="nav-links">
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#home">Home</a></li>
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#about">About</a></li>
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#projects">Projects</a></li>
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#skills">Skills</a></li>
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#certifications">Certifications</a></li>
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#experience">Experience</a></li>
+                    <li><a class="nav-link relative text-gray-200 hover:text-cyan-400 transition-colors after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-0.5 after:bg-gradient-to-r after:from-cyan-400 after:to-blue-400 after:transition-all after:duration-300" href="#contact">Contact</a></li>
                 </ul>
-                                <div class="flex items-center gap-3">
-                                        <!-- Download link points to local PDF in assets and uses the download attribute -->
-                                        <a id="download-resume" href="assets/Preesha_Resume.pdf" download class="download-btn inline-flex items-center gap-2 bg-gradient-to-r from-[#2563eb] to-[#60a5fa] hover:from-[#1e40af] hover:to-[#3b82f6] text-white px-4 py-2 rounded-md text-sm transition-transform transform-gpu">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5"/></svg>
-                                            <span>Download Resume</span>
-                                        </a>
-                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-200 hover:bg-white/5"> 
+                
+                <div class="flex items-center gap-3">
+                    <!-- Creative Download Resume Button -->
+                    <a id="download-resume" href="https://drive.google.com/file/d/1lacn3KjAcsPo-1tnoVo3UFu4XVFKboEw/view?usp=sharing" target="_blank" class="download-btn group relative inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-semibold text-white overflow-hidden transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-cyan-500/40">
+                        <!-- Gradient background -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 opacity-100 group-hover:opacity-110 transition-opacity"></div>
+                        <!-- Animated border glow -->
+                        <div class="absolute inset-0 rounded-lg bg-gradient-to-r from-cyan-400 to-blue-400 opacity-0 group-hover:opacity-100 blur transition-opacity duration-300 -z-10"></div>
+                        <!-- Shine effect -->
+                        <div class="absolute top-0 left-0 right-0 h-full w-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform group-hover:translate-x-full transition-transform duration-500" style="pointer-events: none;"></div>
+                        
+                        <div class="relative z-10 flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v14m7-7H5"/>
+                            </svg>
+                            <span class="font-bold tracking-wide">Resume</span>
+                        </div>
+                    </a>
+                    
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-gray-200 hover:bg-cyan-500/20 hover:text-cyan-400 transition-all"> 
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                     </button>
                 </div>
@@ -43,6 +61,7 @@
                     <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#certifications">Certifications</a>
                     <a class="nav-link" href="#experience">Experience</a>
                     <a class="nav-link" href="#contact">Contact</a>
                 </div>
@@ -51,30 +70,54 @@
 
         <main class="pt-24">
             <!-- Hero -->
-            <section id="home" class="min-h-[78vh] flex items-center">
-                <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="space-y-6">
-                        <p class="text-teal-300 font-medium">Hi, I'm</p>
-                        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
-                            <span class="text-white">Preesha Vashisth</span>
-                        </h1>
-                        <div class="text-2xl md:text-3xl font-semibold text-gray-200">
-                            <span id="type-text" class="text-[#93c5fd]"></span>
-                            <span class="blinking-cursor">|</span>
+            <section id="home" class="min-h-[78vh] flex items-center relative overflow-hidden">
+                <!-- Animated background gradient -->
+                <div class="absolute inset-0 bg-gradient-to-br from-[#1e3a8a]/20 via-transparent to-[#0b1020] pointer-events-none"></div>
+                <div class="absolute top-20 right-0 w-96 h-96 bg-gradient-to-br from-[#60a5fa]/10 to-transparent rounded-full blur-3xl"></div>
+                
+                <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative z-10">
+                    <div class="space-y-8">
+                        <div>
+                            <p class="text-teal-300 font-semibold text-lg tracking-widest uppercase">Hi I'm </p>
+                            <h1 class="text-5xl md:text-6xl font-black leading-tight mt-3 bg-gradient-to-r from-white via-blue-200 to-cyan-200 bg-clip-text text-transparent">
+                                Preesha Vashisth
+                            </h1>
+                        </div>
+                        
+                        <div class="text-xl md:text-2xl font-semibold text-gray-300 h-16">
+                            <span id="type-text" class="text-[#93c5fd] font-bold"></span>
+                            <span class="blinking-cursor text-cyan-400">|</span>
                         </div>
 
-                        <p class="text-gray-300 max-w-xl">I build modern, responsive web applications and UX-driven interfaces. Currently a B.Tech CSE student at VIT Bhopal (Class of 2026), seeking entry-level software developer roles.</p>
+                        <p class="text-gray-300 text-lg leading-relaxed max-w-xl">Full-stack developer crafting scalable, modern web applications that drive business impact. Final-year CSE student at VIT Bhopal with expertise in React, Node.js, AWS & DevOps.</p>
 
-                        <div class="flex items-center gap-4">
-                            <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">LinkedIn</a>
-                            <a href="https://github.com/preesha73" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">GitHub</a>
-                            <a href="mailto:ptpk2810@gmail.com" class="text-gray-200 hover:text-[#60a5fa]">Email</a>
+                        <!-- Stats -->
+                        <div class="grid grid-cols-3 gap-4 py-6 border-y border-gray-700">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-cyan-400">5+</div>
+                                <div class="text-xs text-gray-400 mt-1">Projects Built</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-cyan-400">7</div>
+                                <div class="text-xs text-gray-400 mt-1">Certifications</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-cyan-400">3+</div>
+                                <div class="text-xs text-gray-400 mt-1">Internships</div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap items-center gap-3 pt-4">
+                            <a href="mailto:ptpk2810@gmail.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">Let's Connect</a>
+                            <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="inline-flex items-center gap-2 border border-cyan-500/50 hover:border-cyan-500 text-cyan-300 hover:text-cyan-200 font-semibold px-6 py-3 rounded-lg transition-all duration-300">LinkedIn</a>
+                            <a href="https://github.com/preesha73" target="_blank" class="inline-flex items-center gap-2 border border-gray-600/50 hover:border-gray-500 text-gray-300 hover:text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300">GitHub</a>
                         </div>
                     </div>
 
-                    <div class="flex justify-center">
-                        <!-- Profile photo (place your image at assets/profile.jpg) -->
-                        <div class="w-48 md:w-72 h-48 md:h-72 rounded-2xl overflow-hidden border border-white/5 bg-gradient-to-br from-[#07112b] to-[#0b1630] flex items-center justify-center">
+                    <div class="flex justify-center relative">
+                        <!-- Profile photo glow effect -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-blue-500/20 rounded-3xl blur-2xl"></div>
+                        <div class="w-48 md:w-72 h-48 md:h-72 rounded-3xl overflow-hidden border-2 border-cyan-500/30 bg-gradient-to-br from-[#07112b] to-[#0b1630] flex items-center justify-center shadow-2xl hover:shadow-cyan-500/20 transition-all duration-500 relative">
                             <img src="public/assets/profile.png" alt="Preesha Vashisth" class="w-full h-full object-cover" onerror="this.style.display='none'">
                         </div>
                     </div>
@@ -82,103 +125,197 @@
             </section>
 
             <!-- About -->
-            <section id="about" class="max-w-6xl mx-auto px-6 py-16 fade-section">
-                <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
-                <p class="text-gray-300 max-w-3xl">I am a final-year Computer Science student at VIT Bhopal University with a strong foundation in full-stack development. I enjoy building robust and scalable web applications, automating CI/CD pipelines, and crafting delightful user experiences. I have hands-on experience with React, Node.js, TypeScript, and cloud tools like AWS — and I love solving problems and learning new technologies.</p>
-
-                <div class="mt-6 flex items-center gap-4">
-                    <a href="mailto:ptpk2810@gmail.com" class="hire-btn inline-flex items-center gap-2 bg-gradient-to-r from-[#fb7185] to-[#fca5a5] hover:from-[#f97372] hover:to-[#fb7185] text-white px-4 py-2 rounded-md text-sm">Hire Me</a>
-                    <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">LinkedIn</a>
-                    <a href="https://github.com/preesha73" target="_blank" class="text-gray-200 hover:text-[#60a5fa]">GitHub</a>
+            <section id="about" class="max-w-6xl mx-auto px-6 py-20 fade-section relative">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="inline-block mb-4">
+                            <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">About Me</span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">Building Tomorrow's <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Digital Solutions</span></h2>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">I'm a final-year CSE student at VIT Bhopal with a proven track record in full-stack development. My passion lies in creating scalable, high-performance applications that solve real-world problems.</p>
+                        <p class="text-gray-400 text-lg leading-relaxed">With hands-on expertise in React, Node.js, TypeScript, and AWS, I've built everything from design systems to production-grade applications. I'm motivated by clean code, user-centric design, and continuous learning.</p>
+                        
+                        <div class="mt-8 space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="text-xl text-cyan-400 mt-1">✓</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Full-Stack Development</h4>
+                                    <p class="text-gray-400 text-sm">React, Node.js, Express.js & MongoDB</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="text-xl text-cyan-400 mt-1">✓</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Cloud & DevOps</h4>
+                                    <p class="text-gray-400 text-sm">AWS, Docker, CI/CD Pipeline Automation</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="text-xl text-cyan-400 mt-1">✓</div>
+                                <div>
+                                    <h4 class="text-white font-semibold">Design & UX</h4>
+                                    <p class="text-gray-400 text-sm">Responsive Design, Tailwind CSS, Figma</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 flex flex-wrap gap-3">
+                            <a href="mailto:ptpk2810@gmail.com" class="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold px-7 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg">Hire Me Today</a>
+                            <a href="#projects" class="inline-flex items-center gap-2 border border-cyan-500/50 hover:border-cyan-500 text-cyan-300 hover:text-cyan-200 font-semibold px-7 py-3 rounded-lg transition-all duration-300">View My Work</a>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- Achievement Cards -->
+                        <div class="bg-gradient-to-br from-[#1e3a8a]/30 to-[#0c4a6e]/30 border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                            <div class="text-4xl font-bold text-cyan-400 mb-2">8.67</div>
+                            <p class="text-gray-300">CGPA</p>
+                            <p class="text-gray-400 text-sm mt-1">Consistent academic excellence</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-[#1e3a8a]/30 to-[#0c4a6e]/30 border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                            <div class="text-3xl font-bold text-cyan-400 mb-2">3+</div>
+                            <p class="text-gray-300">Professional Internships</p>
+                            <p class="text-gray-400 text-sm mt-1">Amdox, Finlatics, Axxentraa</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-br from-[#1e3a8a]/30 to-[#0c4a6e]/30 border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-500/50 transition-all">
+                            <div class="text-3xl font-bold text-cyan-400 mb-2">8+</div>
+                            <p class="text-gray-300">Skills & Technologies</p>
+                            <p class="text-gray-400 text-sm mt-1">JavaScript, React, Node.js, AWS & more</p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- Projects -->
-            <section id="projects" class="max-w-6xl mx-auto px-6 py-16 fade-section">
-                <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-3xl font-bold">Projects</h2>
-                    <div class="flex gap-2" id="project-filters">
-                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="all">All</button>
-                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="web">Web</button>
-                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="devops">DevOps</button>
-                        <button class="px-3 py-1 rounded-md text-sm bg-gray-800 hover:bg-[#172554] filter-btn" data-filter="typescript">TypeScript</button>
+            <section id="projects" class="max-w-6xl mx-auto px-6 py-20 fade-section relative">
+                <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
+                    <div>
+                        <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">Portfolio</span>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mt-2 leading-tight">Featured <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Projects</span></h2>
+                        <p class="text-gray-400 mt-3 max-w-2xl">Production-ready applications demonstrating full-stack expertise, scalability, and best practices in modern web development.</p>
+                    </div>
+                    <div class="flex gap-2 mt-6 md:mt-0" id="project-filters">
+                        <button class="px-4 py-2 rounded-lg text-sm font-semibold bg-cyan-500/20 border border-cyan-500/50 hover:border-cyan-500 text-cyan-300 hover:bg-cyan-500/30 filter-btn transition-all" data-filter="all">All</button>
+                        <button class="px-4 py-2 rounded-lg text-sm font-semibold bg-gray-800/50 border border-gray-700 hover:border-gray-500 text-gray-300 filter-btn transition-all" data-filter="web">Web</button>
+                        <button class="px-4 py-2 rounded-lg text-sm font-semibold bg-gray-800/50 border border-gray-700 hover:border-gray-500 text-gray-300 filter-btn transition-all" data-filter="devops">DevOps</button>
+                        <button class="px-4 py-2 rounded-lg text-sm font-semibold bg-gray-800/50 border border-gray-700 hover:border-gray-500 text-gray-300 filter-btn transition-all" data-filter="typescript">TypeScript</button>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
                     <!-- Project cards: populated statically from resume + GitHub selection -->
-                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,typescript,design">
-                        <h3 class="text-xl font-semibold text-white mb-2">My Design System</h3>
-                        <p class="text-gray-300 text-sm mb-3">Enterprise-grade design system built with React, TypeScript and Storybook. Includes accessible components and CI automation.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag">React</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Storybook</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/preesha73/MyDesignSystem" target="_blank" class="btn-secondary">View Code</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,fullstack,docker,devops">
-                        <h3 class="text-xl font-semibold text-white mb-2">Food Delivery Platform</h3>
-                        <p class="text-gray-300 text-sm mb-3">Full-stack delivery app with Node.js, PostgreSQL backend, containerized with Docker and CI/CD pipelines for deployment.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">Docker</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/preesha73/DeliveryApp" target="_blank" class="btn-secondary">View Code</a>
+                    <article class="project-card group relative bg-gradient-to-br from-[#0e1724] to-[#071026] border border-white/5 hover:border-cyan-500/30 rounded-2xl p-6 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2" data-tags="web,typescript,design">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="inline-block mb-3 px-3 py-1 bg-cyan-500/20 border border-cyan-500/50 rounded-full">
+                                <span class="text-cyan-300 text-xs font-bold uppercase tracking-wider">Design System</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">My Design System</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Enterprise-grade design system delivering 50+ accessible React components with TypeScript and Storybook documentation.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Storybook</span>
+                            </div>
+                            <div class="pt-4 border-t border-gray-700 flex items-center justify-between">
+                                <span class="text-xs text-gray-500">🎯 Enterprise Grade</span>
+                                <a href="https://github.com/preesha73/MyDesignSystem" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm">View Code →</a>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,real-time,messaging,mongodb">
-                        <h3 class="text-xl font-semibold text-white mb-2">Real-Time Chat App</h3>
-                        <p class="text-gray-300 text-sm mb-3">MERN chat application with Socket.IO, JWT authentication and a scalable messaging API.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Socket.IO</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/preesha73/Real-Time-ChatApp" target="_blank" class="btn-secondary">View Code</a>
-                        </div>
-                    </article>
-
-                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,portfolio,html">
-                        <h3 class="text-xl font-semibold text-white mb-2">Portfolio</h3>
-                        <p class="text-gray-300 text-sm mb-3">Responsive personal portfolio showcasing projects, skills and experience.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/preesha73/Portfolio" target="_blank" class="btn-secondary">View Code</a>
+                    <article class="project-card group relative bg-gradient-to-br from-[#0e1724] to-[#071026] border border-white/5 hover:border-cyan-500/30 rounded-2xl p-6 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2" data-tags="web,fullstack,docker,devops">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="inline-block mb-3 px-3 py-1 bg-orange-500/20 border border-orange-500/50 rounded-full">
+                                <span class="text-orange-300 text-xs font-bold uppercase tracking-wider">Full Stack</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Food Delivery Platform</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Production-ready full-stack delivery platform with scalable Node.js backend, PostgreSQL database, and Docker containerization.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                            <div class="pt-4 border-t border-gray-700 flex items-center justify-between">
+                                <span class="text-xs text-gray-500">🚀 Production Ready</span>
+                                <a href="https://github.com/preesha73/DeliveryApp" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm">View Code →</a>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card relative bg-[#0e1724] border border-white/5 rounded-xl p-6 overflow-hidden" data-tags="web,js,amdox">
-                        <h3 class="text-xl font-semibold text-white mb-2">Amdox Website</h3>
-                        <p class="text-gray-300 text-sm mb-3">Company website developed during my Web Developer internship at Amdox Technologies — responsive layout and interactive sections.</p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML</span>
-                            <span class="tag">Responsive</span>
-                        </div>
-                        <div class="flex gap-3">
-                            <a href="https://github.com/preesha73/Amdox-Website" target="_blank" class="btn-secondary">View Code</a>
+                    <article class="project-card group relative bg-gradient-to-br from-[#0e1724] to-[#071026] border border-white/5 hover:border-cyan-500/30 rounded-2xl p-6 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2" data-tags="web,real-time,messaging,mongodb">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="inline-block mb-3 px-3 py-1 bg-green-500/20 border border-green-500/50 rounded-full">
+                                <span class="text-green-300 text-xs font-bold uppercase tracking-wider">Real-Time</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Real-Time Chat App</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">MERN stack chat application with real-time messaging via Socket.IO, JWT authentication, and secure API design.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Socket.IO</span>
+                            </div>
+                            <div class="pt-4 border-t border-gray-700 flex items-center justify-between">
+                                <span class="text-xs text-gray-500">⚡ Real-Time</span>
+                                <a href="https://github.com/preesha73/Real-Time-ChatApp" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm">View Code →</a>
+                            </div>
                         </div>
                     </article>
 
+                    <article class="project-card group relative bg-gradient-to-br from-[#0e1724] to-[#071026] border border-white/5 hover:border-cyan-500/30 rounded-2xl p-6 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2" data-tags="web,real-time,messaging,mongodb">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="inline-block mb-3 px-3 py-1 bg-green-500/20 border border-green-500/50 rounded-full">
+                                <span class="text-green-300 text-xs font-bold uppercase tracking-wider">Portfolio</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Portfolio</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Responsive personal portfolio showcasing projects, skills and experience.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="pt-4 border-t border-gray-700 flex items-center justify-between">
+                                <span class="text-xs text-gray-500">⚡ Portfolio</span>
+                                <a href="https://github.com/preesha73/Portfolio" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm">View Code →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card group relative bg-gradient-to-br from-[#0e1724] to-[#071026] border border-white/5 hover:border-cyan-500/30 rounded-2xl p-6 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2" data-tags="web,typescript,design">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500"></div>
+                        <div class="relative z-10">
+                            <div class="inline-block mb-3 px-3 py-1 bg-cyan-500/20 border border-cyan-500/50 rounded-full">
+                                <span class="text-cyan-300 text-xs font-bold uppercase tracking-wider">Amdox Website</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Amdox Website</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">Company website developed during my Web Developer internship at Amdox Technologies — responsive layout and interactive sections.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tag">HTML</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <div class="pt-4 border-t border-gray-700 flex items-center justify-between">
+                                <span class="text-xs text-gray-500">🎯 Amdox Website</span>
+                                <a href="https://github.com/preesha73/Amdox-Website" target="_blank" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 font-semibold text-sm">View Code →</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </section>
 
             <!-- Skills (three-card layout) -->
-            <section id="skills" class="max-w-6xl mx-auto px-6 py-16 fade-section">
-                <h2 class="text-3xl font-bold mb-8 text-center">Let's have a look at my <span class="text-[#fca5a5]">Skills</span></h2>
+            <section id="skills" class="max-w-6xl mx-auto px-6 py-20 fade-section">
+                <div class="text-center mb-12">
+                    <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">expertise</span>
+                    <h2 class="text-4xl md:text-5xl font-bold mt-2 text-white">Technical <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Proficiency</span></h2>
+                    <p class="text-gray-400 mt-3 max-w-2xl mx-auto">Proven expertise across the full development stack with advanced proficiency in modern frameworks and cloud technologies.</p>
+                </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 skill-grid">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 skill-grid">
                     <!-- Frontend card -->
                     <div class="skill-card bg-[#071026] rounded-2xl p-6 shadow-md">
                         <h3 class="text-lg font-semibold text-white mb-3">Frontend Development</h3>
@@ -346,44 +483,333 @@
                 </div>
             </section>
 
-            <!-- Experience & Education -->
-            <section id="experience" class="max-w-6xl mx-auto px-6 py-16 fade-section">
-                <h2 class="text-3xl font-bold mb-4">Education & Experience</h2>
-                <h4 class="text-gray-300 mb-2">My professional Journey</h4><br>
+            <!-- Certifications -->
+            <section id="certifications" class="max-w-6xl mx-auto px-6 py-16 fade-section">
+                <h2 class="text-3xl font-bold mb-4">Certifications & Achievements</h2>
+                <p class="text-gray-300 mb-8">Professional credentials and verified accomplishments</p>
 
-                <div class="grid grid-cols-1 gap-4">
-                    <div>
-                        <h3 class="text-xl font-semibold text-white">Education</h3>
-                        <p class="text-gray-300 mt-2">Bachelor of Technology in Computer Science and Engineering — VIT Bhopal University (Aug 2022 – Oct 2026)</p>
-                        <p class="text-gray-400 text-sm mt-1">Cumulative GPA: 8.64</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- AWS Certified Cloud Practitioner -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#FF9900] via-[#FF9900]/10 to-[#0b1020] border border-[#FF9900]/20 p-6 hover:border-[#FF9900]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#FF9900]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#FF9900] to-[#FF7300] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#FF9900] bg-[#FF9900]/10 px-3 py-1 rounded-full">Certified</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">AWS Certified Cloud Practitioner</h3>
+                            <p class="text-sm text-gray-300 mb-4">Amazon Web Services</p>
+                            <p class="text-xs text-gray-400 mb-4">Foundational cloud expertise covering AWS services, cloud concepts, and best practices.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Cloud</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">AWS</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1o-QMwtCPMiWRtil-jlY9k16DHzxSp2k8/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#FF9900] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <h3 class="text-xl font-semibold text-white">Work Experience</h3>
-                        <div class="mt-3 space-y-4">
-                            <div>
-                                <p class="font-semibold text-white">Web Developer Intern — Amdox Technologies (Sept 2025 - Oct 2025)</p>
-                                <ul class="list-disc list-inside text-gray-300 mt-2">
-                                    <li>Developed responsive web applications using React and modern JS to improve user experience.</li>
-                                    <li>Integrated REST APIs and collaborated with designers to optimize front-end functionality.</li>
-                                    <li>Assisted with debugging, code reviews and delivering maintainable software.</li>
+                    <!-- Coursera - HTML, CSS, JavaScript -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0066FF] via-[#0066FF]/10 to-[#0b1020] border border-[#0066FF]/20 p-6 hover:border-[#0066FF]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#0066FF]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#0066FF] to-[#0052CC] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm6 8.5h2V19h-2v-7.5zM5 11h2V19H5v-8zm8-1.5h2V19h-2v-9.5zm4 5h2v4.5h-2v-4.5z"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#0066FF] bg-[#0066FF]/10 px-3 py-1 rounded-full">Completed</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">HTML, CSS & JavaScript for Web Developers</h3>
+                            <p class="text-sm text-gray-300 mb-4">Johns Hopkins University • Coursera</p>
+                            <p class="text-xs text-gray-400 mb-4">Comprehensive course covering front-end web development fundamentals and best practices.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Web Dev</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Frontend</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1fOO-LyLA0XrqsgcI3W5aqEporzs7rhfh/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#0066FF] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Analyst - Finlatics -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#10B981] via-[#10B981]/10 to-[#0b1020] border border-[#10B981]/20 p-6 hover:border-[#10B981]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#10B981]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#10B981] to-[#059669] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#10B981] bg-[#10B981]/10 px-3 py-1 rounded-full">Certified</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Business Analyst Experience Certificate</h3>
+                            <p class="text-sm text-gray-300 mb-4">Finlatics</p>
+                            <p class="text-xs text-gray-400 mb-4">Professional certification in business analysis, data-driven decision making, and strategic planning.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Analysis</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Strategy</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1W67_Mn3x2UQtD4Zl7qW58TweAwiFb5Hj/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#10B981] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Java Foundation Associate - Oracle -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#EA2D2F] via-[#EA2D2F]/10 to-[#0b1020] border border-[#EA2D2F]/20 p-6 hover:border-[#EA2D2F]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#EA2D2F]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#EA2D2F] to-[#D62021] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8.5 3C7.12 3 6 4.12 6 5.5v13C6 19.88 7.12 21 8.5 21h7c1.38 0 2.5-1.12 2.5-2.5V9h-5V3h-4zm7-2h4v6h-4V1z"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#EA2D2F] bg-[#EA2D2F]/10 px-3 py-1 rounded-full">Certified</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Java Foundation Associate</h3>
+                            <p class="text-sm text-gray-300 mb-4">Oracle</p>
+                            <p class="text-xs text-gray-400 mb-4">Foundational Java programming concepts and object-oriented principles.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Java</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Backend</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1PuLmhNnGSqQ3FLwHRsLPHt7trvCOx4X4/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#EA2D2F] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Power BI - Udemy -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#F2CC0C] via-[#F2CC0C]/10 to-[#0b1020] border border-[#F2CC0C]/20 p-6 hover:border-[#F2CC0C]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#F2CC0C]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#F2CC0C] to-[#E6BD0C] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 13h2v8H3zm4-8h2v16H7zM21 4h-7v2h5v12h-5v2h7V4z"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#F2CC0C] bg-[#F2CC0C]/10 px-3 py-1 rounded-full">Completed</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Power BI - Business Intelligence for Beginners</h3>
+                            <p class="text-sm text-gray-300 mb-4">Udemy</p>
+                            <p class="text-xs text-gray-400 mb-4">Data visualization and business intelligence fundamentals using Microsoft Power BI.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Analytics</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Power BI</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1D4pERVKagLoSmt-AnuQAU6ATR0FyUo6l/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#F2CC0C] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Winter Internship Technical Training Program - India Space Lab -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#1E40AF] via-[#1E40AF]/10 to-[#0b1020] border border-[#1E40AF]/20 p-6 hover:border-[#1E40AF]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#1E40AF]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#1E40AF] to-[#1E3A8A] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#1E40AF] bg-[#1E40AF]/10 px-3 py-1 rounded-full">Completed</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Winter Internship Technical Training Program 2024-25</h3>
+                            <p class="text-sm text-gray-300 mb-4">India Space Lab</p>
+                            <p class="text-xs text-gray-400 mb-4">Intensive technical training program covering space technology and satellite applications.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Space Tech</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Internship</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/12SsI1nR6m95-oV1ZtnpN8CRZ6Bgxno3x/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#1E40AF] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Remote Sensing and GIS Application in Forest Fire - Workshop -->
+                    <div class="certification-card group relative overflow-hidden rounded-xl bg-gradient-to-br from-[#0891B2] via-[#0891B2]/10 to-[#0b1020] border border-[#0891B2]/20 p-6 hover:border-[#0891B2]/50 transition-all duration-300">
+                        <div class="absolute top-0 right-0 w-20 h-20 bg-[#0891B2]/10 rounded-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-300"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#0891B2] to-[#0E7490] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/></svg>
+                                </div>
+                                <span class="text-xs font-semibold text-[#0891B2] bg-[#0891B2]/10 px-3 py-1 rounded-full">Workshop</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-white mb-2">Remote Sensing and GIS Application in Forest Fire</h3>
+                            <p class="text-sm text-gray-300 mb-4">India Space Academy</p>
+                            <p class="text-xs text-gray-400 mb-4">Workshop covering remote sensing technology and GIS applications for disaster management.</p>
+                            <div class="flex gap-2 pt-2 border-t border-gray-700">
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">GIS</span>
+                                <span class="text-xs text-gray-400 bg-gray-800/50 px-2 py-1 rounded">Remote Sensing</span>
+                            </div>
+                            <div class="mt-4">
+                                <a href="https://drive.google.com/file/d/1jlAyARjOkFRfIFg6wuSqEmLqF-8QQ1d4/view?usp=sharing" target="_blank" class="inline-flex items-center gap-2 text-[#0891B2] hover:text-white transition-colors text-sm font-semibold">View Credential <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience & Education -->
+            <section id="experience" class="max-w-6xl mx-auto px-6 py-20 fade-section relative">
+                <div class="text-center mb-16">
+                    <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">Career Journey</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">Education & <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Professional Growth</span></h2>
+                    <p class="text-gray-400 mt-3 max-w-2xl mx-auto">Building expertise through rigorous academics and diverse professional experiences</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Education Card - Main Focus -->
+                    <div class="lg:col-span-2">
+                        <div class="group relative bg-gradient-to-br from-[#1.5rem6e3a8a]/50 to-[#0c4a6e]/30 hover:from-[#1e3a8a]/70 hover:to-[#0c4a6e]/50 border-2 border-cyan-500/30 hover:border-cyan-500/60 rounded-2xl p-8 transition-all duration-300 overflow-hidden">
+                            <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-cyan-500/20 to-transparent rounded-full -mr-20 -mt-20 group-hover:scale-150 transition-transform duration-500"></div>
+                            <div class="relative z-10">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-white">Education</h3>
+                                        <p class="text-cyan-400 text-sm font-semibold">Foundational Excellence</p>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-4 mt-6">
+                                    <div class="bg-white/5 hover:bg-white/10 border border-cyan-500/20 rounded-xl p-5 transition-all">
+                                        <div class="flex items-start justify-between mb-2">
+                                            <h4 class="text-xl font-bold text-white">B.Tech Computer Science & Engineering</h4>
+                                            <span class="text-cyan-400 font-bold text-sm bg-cyan-500/20 px-3 py-1 rounded-full">2022-2026</span>
+                                        </div>
+                                        <p class="text-gray-400 font-semibold mb-3">Vellore Institute of Technology</p>
+                                        <div class="grid grid-cols-3 gap-3">
+                                            <div class="bg-gradient-to-br from-cyan-500/20 to-transparent rounded-lg p-3 text-center">
+                                                <div class="text-2xl font-bold text-cyan-400">8.67</div>
+                                                <p class="text-xs text-gray-400">CGPA</p>
+                                            </div>
+                                            <div class="bg-gradient-to-br from-cyan-500/20 to-transparent rounded-lg p-3 text-center">
+                                                <div class="text-2xl font-bold text-cyan-400">7</div>
+                                                <p class="text-xs text-gray-400">Certifications</p>
+                                            </div>
+                                            <div class="bg-gradient-to-br from-cyan-500/20 to-transparent rounded-lg p-3 text-center">
+                                                <div class="text-2xl font-bold text-cyan-400">8+</div>
+                                                <p class="text-xs text-gray-400">Tech Stack</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Stats Sidebar -->
+                    <div class="space-y-4">
+                        <div class="group relative bg-gradient-to-br from-[#7c2d12]/40 to-[#92400e]/40 hover:from-[#7c2d12]/60 hover:to-[#92400e]/60 border-2 border-orange-500/30 hover:border-orange-500/60 rounded-xl p-6 transition-all">
+                            <div class="absolute top-0 right-0 w-20 h-20 bg-orange-500/10 rounded-full -mr-10 -mt-10"></div>
+                            <div class="relative z-10">
+                                <div class="text-orange-400 text-3xl font-bold mb-1">3+</div>
+                                <p class="text-gray-300 font-semibold">Internships</p>
+                                <p class="text-gray-500 text-xs mt-2">Cross-functional experience</p>
+                            </div>
+                        </div>
+                        <div class="group relative bg-gradient-to-br from-[#065f46]/40 to-[#047857]/40 hover:from-[#065f46]/60 hover:to-[#047857]/60 border-2 border-green-500/30 hover:border-green-500/60 rounded-xl p-6 transition-all">
+                            <div class="absolute top-0 right-0 w-20 h-20 bg-green-500/10 rounded-full -mr-10 -mt-10"></div>
+                            <div class="relative z-10">
+                                <div class="text-green-400 text-3xl font-bold mb-1">Full-Stack</div>
+                                <p class="text-gray-300 font-semibold">Developer</p>
+                                <p class="text-gray-500 text-xs mt-2">End-to-end projects</p>
+                            </div>
+                        </div>
+                        <div class="group relative bg-gradient-to-br from-[#1e3a8a]/40 to-[#0c4a6e]/40 hover:from-[#1e3a8a]/60 hover:to-[#0c4a6e]/60 border-2 border-blue-500/30 hover:border-blue-500/60 rounded-xl p-6 transition-all">
+                            <div class="absolute top-0 right-0 w-20 h-20 bg-blue-500/10 rounded-full -mr-10 -mt-10"></div>
+                            <div class="relative z-10">
+                                <div class="text-blue-400 text-3xl font-bold mb-1">✓ Ready</div>
+                                <p class="text-gray-300 font-semibold">For Next Role</p>
+                                <p class="text-gray-500 text-xs mt-2">Immediate availability</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Experience Timeline -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                        <span class="text-cyan-400">🚀</span> Professional Experience
+                    </h3>
+                    <div class="space-y-6">
+                        <!-- Experience 1 -->
+                        <div class="relative pl-8 border-l-2 border-cyan-500/50 hover:border-cyan-500 transition-all">
+                            <div class="absolute -left-4 top-2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-[#0b1020]"></div>
+                            <div class="bg-gradient-to-r from-[#1e3a8a]/30 to-transparent hover:from-[#1e3a8a]/50 border border-cyan-500/20 hover:border-cyan-500/50 rounded-xl p-6 transition-all">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-lg font-bold text-white">Web Developer Intern</h4>
+                                        <p class="text-cyan-400 font-semibold">Amdox Technologies</p>
+                                    </div>
+                                    <span class="text-xs font-bold bg-cyan-500/20 border border-cyan-500/50 text-cyan-300 px-3 py-1 rounded-full">Sept - Oct 2025</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-cyan-400 mt-1">→</span>
+                                        <span>Developed responsive web applications using React and modern JavaScript</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-cyan-400 mt-1">→</span>
+                                        <span>Integrated REST APIs and optimized front-end performance</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-cyan-400 mt-1">→</span>
+                                        <span>Collaborated with designers and conducted code reviews</span>
+                                    </li>
                                 </ul>
                             </div>
+                        </div>
 
-                            <div>
-                                <p class="font-semibold text-white">Business & Operations Intern — Axxentraa NextGen (June 2025 - Sept 2025)</p>
-                                <ul class="list-disc list-inside text-gray-300 mt-2">
-                                    <li>Supported process optimization and analytics to improve operational efficiency.</li>
-                                    <li>Assisted in strategic planning by analyzing data and identifying improvement opportunities.</li>
+                        <!-- Experience 2 -->
+                        <div class="relative pl-8 border-l-2 border-orange-500/50 hover:border-orange-500 transition-all">
+                            <div class="absolute -left-4 top-2 w-6 h-6 bg-orange-500 rounded-full border-4 border-[#0b1020]"></div>
+                            <div class="bg-gradient-to-r from-[#7c2d12]/30 to-transparent hover:from-[#7c2d12]/50 border border-orange-500/20 hover:border-orange-500/50 rounded-xl p-6 transition-all">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-lg font-bold text-white">Business & Operations Intern</h4>
+                                        <p class="text-orange-400 font-semibold">Axxentraa NextGen</p>
+                                    </div>
+                                    <span class="text-xs font-bold bg-orange-500/20 border border-orange-500/50 text-orange-300 px-3 py-1 rounded-full">June - Sept 2025</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-400 mt-1">→</span>
+                                        <span>Optimized business processes and improved operational efficiency</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-orange-400 mt-1">→</span>
+                                        <span>Conducted data analysis and strategic planning initiatives</span>
+                                    </li>
                                 </ul>
                             </div>
+                        </div>
 
-                            <div>
-                                <p class="font-semibold text-white">Business Analyst Intern — Finlatics (Dec 2024 - Feb 2025)</p>
-                                <ul class="list-disc list-inside text-gray-300 mt-2">
-                                    <li>Completed a Business Analyst certification focused on data-driven decision-making.</li>
-                                    <li>Gained experience in market research, competitive analysis, and strategic planning.</li>
-                                    <li>Applied data analysis and visualization skills using tools like Excel and Power BI.</li>
+                        <!-- Experience 3 -->
+                        <div class="relative pl-8 border-l-2 border-green-500/50 hover:border-green-500 transition-all">
+                            <div class="absolute -left-4 top-2 w-6 h-6 bg-green-500 rounded-full border-4 border-[#0b1020]"></div>
+                            <div class="bg-gradient-to-r from-[#065f46]/30 to-transparent hover:from-[#065f46]/50 border border-green-500/20 hover:border-green-500/50 rounded-xl p-6 transition-all">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-lg font-bold text-white">Business Analyst Intern</h4>
+                                        <p class="text-green-400 font-semibold">Finlatics</p>
+                                    </div>
+                                    <span class="text-xs font-bold bg-green-500/20 border border-green-500/50 text-green-300 px-3 py-1 rounded-full">Dec 2024 - Feb 2025</span>
+                                </div>
+                                <ul class="space-y-2 text-gray-300">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-400 mt-1">→</span>
+                                        <span>Completed Business Analyst certification and market research</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-green-400 mt-1">→</span>
+                                        <span>Applied data visualization using Excel and Power BI</span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -392,52 +818,125 @@
             </section>
 
             <!-- Contact -->
-            <section id="contact" class="max-w-6xl mx-auto px-6 py-16 fade-section">
-                <h2 class="text-3xl font-bold mb-4">Get in touch</h2>
-                <p class="text-gray-300 mb-6">I'm open to entry-level software developer roles and internships. Reach out and let's talk.</p>
+            <section id="contact" class="max-w-6xl mx-auto px-6 py-20 fade-section relative overflow-hidden">
+                <!-- Animated background elements -->
+                <div class="absolute top-20 left-0 w-72 h-72 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
+                <div class="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-tl from-blue-500/10 to-transparent rounded-full blur-3xl"></div>
 
-                <!-- Optional image: put your screenshot at assets/contact-form.png. If not present, onerror will hide the img element. -->
-                <img src="assets/contact-form.png" alt="Contact form preview" class="w-full rounded-lg shadow-md mb-8" onerror="this.style.display='none'">
+                <div class="relative z-10">
+                    <div class="text-center mb-16">
+                        <span class="text-cyan-400 font-semibold text-sm uppercase tracking-widest">Next Opportunity Awaits</span>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">Let's Build Something <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Extraordinary</span></h2>
+                        <p class="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">I'm actively seeking roles where I can contribute immediately and drive measurable impact. Let's start the conversation.</p>
+                    </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 contact-grid">
-                    <a href="mailto:ptpk2810@gmail.com" class="contact-card group" aria-label="Email Preesha">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4a2 2 0 012-2h12a2 2 0 012 2v1.05a7 7 0 00-3.362 1.235l-.172.143H5v10a2 2 0 002 2h5.09a7 7 0 001.513-2h-6.603a1 1 0 00-1-1V7h9V6a1 1 0 011-1h3a1 1 0 011 1v2.586a7.033 7.033 0 011.414-1.414V4z"/></svg>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                        <!-- Quick Connect Methods -->
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-bold text-white mb-6">Quick Connect</h3>
+                            
+                            <!-- Email -->
+                            <a href="mailto:ptpk2810@gmail.com?subject=Exciting%20Opportunity%20At%20Your%20Company" class="group relative block bg-gradient-to-r from-cyan-500/20 to-blue-500/10 hover:from-cyan-500/30 hover:to-blue-500/20 border border-cyan-500/30 hover:border-cyan-500/60 rounded-xl p-4 transition-all duration-300 transform hover:scale-105">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-cyan-500/50 transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Email</h4>
+                                        <p class="text-gray-400 text-sm">ptpk2810@gmail.com</p>
+                                        <p class="text-cyan-400 text-xs mt-1 font-semibold">⚡ Response in 24hrs</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Phone/WhatsApp Placeholder -->
+                            <div class="group relative block bg-gradient-to-r from-green-500/20 to-blue-500/10 hover:from-green-500/30 hover:to-blue-500/20 border border-green-500/30 hover:border-green-500/60 rounded-xl p-4 transition-all duration-300 cursor-pointer">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-green-500 to-blue-500 flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-green-500/50 transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.92 7.02C17.45 6.18 16.3 5.86 15.77 5.86c-.53 0-1.08.19-1.69.53-.41.23-.74.56-1.04.9-.3-.34-.63-.67-1.04-.9-.61-.34-1.16-.53-1.69-.53-.53 0-1.68.32-2.15 1.16C8.88 8.88 11 15.5 17 21c3-2.5 5.5-5.5 6-7.98.12-.62 0-1.14-.08-1.49z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">Let's Talk</h4>
+                                        <p class="text-gray-400 text-sm">Available for discussions</p>
+                                        <p class="text-green-400 text-xs mt-1 font-semibold">🟢 Currently Available</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="group relative block bg-gradient-to-r from-blue-600/20 to-blue-500/10 hover:from-blue-600/30 hover:to-blue-500/20 border border-blue-500/30 hover:border-blue-500/60 rounded-xl p-4 transition-all duration-300 transform hover:scale-105">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-600 to-blue-500 flex items-center justify-center flex-shrink-0 group-hover:shadow-lg group-hover:shadow-blue-500/50 transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white">LinkedIn Profile</h4>
+                                        <p class="text-gray-400 text-sm">Connect & explore my network</p>
+                                        <p class="text-blue-400 text-xs mt-1 font-semibold">🔗 1K+ connections</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <h4 class="contact-title">Email</h4>
-                        <p class="contact-detail">ptpk2810@gmail.com</p>
-                    </a>
 
-                    <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="contact-card group" aria-label="Preesha on LinkedIn">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
-                        </div>
-                        <h4 class="contact-title">LinkedIn</h4>
-                        <p class="contact-detail">linkedin.com/in/preesha-vashisth-493008248</p>
-                    </a>
+                        <!-- Availability & Status Card -->
+                        <div class="space-y-4">
+                            <h3 class="text-xl font-bold text-white mb-6">Opportunity Status</h3>
+                            
+                            <!-- Main CTA -->
+                            <a href="mailto:ptpk2810@gmail.com" class="group relative block bg-gradient-to-br from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 rounded-xl p-8 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl hover:shadow-cyan-500/30 text-center">
+                                <div class="absolute top-3 right-3 w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                                <h4 class="text-2xl font-bold text-white mb-2">Actively Hiring</h4>
+                                <p class="text-cyan-100 text-sm mb-4">Ready to join your team immediately</p>
+                                <div class="inline-block px-6 py-2 bg-white/20 hover:bg-white/30 rounded-lg font-bold text-white transition-all">
+                                    Start Conversation →
+                                </div>
+                            </a>
 
-                    <a href="https://github.com/preesha73" target="_blank" class="contact-card group" aria-label="Preesha on GitHub">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        </div>
-                        <h4 class="contact-title">GitHub</h4>
-                        <p class="contact-detail">github.com/preesha73</p>
-                    </a>
+                            <!-- Info Cards -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-gradient-to-br from-orange-500/20 to-transparent border border-orange-500/30 rounded-lg p-4 text-center">
+                                    <div class="text-2xl font-bold text-orange-400">🚀</div>
+                                    <p class="text-white font-bold text-sm mt-2">Immediate</p>
+                                    <p class="text-gray-400 text-xs">Availability</p>
+                                </div>
+                                <div class="bg-gradient-to-br from-green-500/20 to-transparent border border-green-500/30 rounded-lg p-4 text-center">
+                                    <div class="text-2xl font-bold text-green-400">✓</div>
+                                    <p class="text-white font-bold text-sm mt-2">Full-Stack</p>
+                                    <p class="text-gray-400 text-xs">Developer</p>
+                                </div>
+                            </div>
 
-                    <a href="https://www.instagram.com/preesha_vashisth" target="_blank" class="contact-card group" aria-label="Preesha on Instagram">
-                        <div class="contact-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm4.846-10.403c0 .795.645 1.44 1.44 1.44s1.44-.645 1.44-1.44-.645-1.44-1.44-1.44-1.44.645-1.44 1.44z"/></svg>
+                            <div class="bg-gradient-to-r from-blue-500/10 to-cyan-500/10 border border-cyan-500/30 rounded-lg p-4">
+                                <p class="text-gray-300 text-sm"><span class="font-bold text-cyan-400">Pro Tip:</span> Email works best for detailed project briefs. Let me know about your team's vision!</p>
+                            </div>
                         </div>
-                        <h4 class="contact-title">Instagram</h4>
-                        <p class="contact-detail">@preesha_vashisth</p>
-                    </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="mt-16 pt-12 border-t border-gray-800">
+                        <p class="text-center text-gray-400 mb-8">Follow my journey</p>
+                        <div class="flex justify-center items-center gap-4 flex-wrap">
+                            <a href="https://www.linkedin.com/in/preesha-vashisth-493008248/" target="_blank" class="group relative w-12 h-12 bg-gradient-to-br from-blue-600/30 to-transparent hover:from-blue-600/60 border border-blue-500/30 hover:border-blue-500/60 rounded-lg flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-blue-500/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065z"/></svg>
+                            </a>
+                            <a href="https://github.com/preesha73" target="_blank" class="group relative w-12 h-12 bg-gradient-to-br from-gray-600/30 to-transparent hover:from-gray-600/60 border border-gray-500/30 hover:border-gray-500/60 rounded-lg flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-gray-500/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://www.instagram.com/preesha_vashisth" target="_blank" class="group relative w-12 h-12 bg-gradient-to-br from-pink-600/30 to-transparent hover:from-pink-600/60 border border-pink-500/30 hover:border-pink-500/60 rounded-lg flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg hover:shadow-pink-500/30">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-pink-400 group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
         </main>
 
-        <footer class="mt-12 py-8 bg-[#061025] text-center text-gray-400">
-            <div class="max-w-6xl mx-auto px-6">&copy; 2025 Preesha Vashisth. All rights reserved.</div>
+        <footer class="mt-16 py-12 bg-gradient-to-r from-[#061025] via-[#0b1020] to-[#061025] text-center border-t border-gray-800">
+            <div class="max-w-6xl mx-auto px-6">
+                <p class="text-gray-400 mb-2">&copy; 2025 Preesha Vashisth. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">Crafted with creativity & precision | Open to opportunities</p>
+            </div>
         </footer>
 
         <!-- Scroll to top -->
