@@ -4,6 +4,9 @@
   "description": "**Project Overview**",
   "main": "script.js",
   "scripts": {
+    "dev": "vite --port 5173",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
